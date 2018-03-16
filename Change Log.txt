@@ -1,0 +1,81 @@
+----------------------------------------------------------------------------------------------
+Greetings! Finally, an individual opened this file, or maybe you were just looking for the
+game launcher and misclicked this. Oh well, hope someone finds this interesting--it just helps
+me keep track of what I've done.
+----------------------------------------------------------------------------------------------
+==============================================================================================
+----------------------------------------------------------------------------------------------
+
+v0.01
+----------------------------
+Officially a game
+
+v0.02 - v0.20
+----------------------------
+-Added Jumping
+-Added graphics for platforms, players, peashooter
+-Added Weapon Pea Shooter
+-Pea Shooter: Does 1 HP per hit, any rebounded Hits deal 0.5 HP per hit, players hit take damage
+ and take on each pea's velocity, has no cooldown
+-Improved Platforms Logic
+-Added Grappling Hook
+-Added Acceleration based movement, decay movement
+-Improved Mid Air Movement
+-Improved Grappling Hook
+
+v0.21
+----------------------------
+-Added Weapon Harpoon
+-Added Weapon Shank
+-Added Weapon Rain Cloud
+-Harpoon: deals damage based on distance traveled and speed at moment of collision, can only hit
+ opponents, can deal roughly 10-243, 200 ms CD
+-Shank: short range dagger, deals 5 points of health per hit, has no cooldown, cannot be used with
+ Pea Shooter or any other no CD weapons
+-Rain Cloud: Shoots a cloud that lasts 400 ms, generates a rain droplet every ms, rain droplets
+ deal 1 damage to opponents and heal the caster 0.5 health.
+
+v0.22
+----------------------------
+-Shank now has a CD of 100 ms, dealing 13 damage and 24 damage if backstab (opponent facing away from
+ the shank).
+
+v0.23
+----------------------------
+-Added Weapon Grenade
+-Added Weapon Black Hole
+-Grenade: explodes after 85 ms, deals damage based on how close anyone is, only affects those
+ 400 units within the grenade at explosion, pushes players
+-Black Hole: Shoots a Orb that decays speed over 200 ms, after it beings its active phase, active
+ phase attracts players and all bullets for every weapon, deals damage to anyone in contact with 
+ center of the black hole
+
+v0.24 Beta
+----------------------------
+-Now in Beta!
+-Lowered Damage on Black Hole's center, Black Holes now spawn tiny particles in a range dealing 1 damage
+ each to anyone who comes in contact
+-Added keys.dat and resolution.dat files allowing users to change the keybinds and resolution
+ 
+v0.25 Beta
+----------------------------
+-Fixed Jumping to be more responsive
+-Changed Pea Shooter so it does not take on the velocity of the player
+-Added Water Bending--Replaces Pea Shooter currently (Pea Shooter still has a placeholder keybind)
+-Water Bending: hold down hotkey to spawn water particles which flow around the user, release to shoot
+ water that correspond to the angle of the crosshair (behind user as well), can hold up to 300 water
+ drops maximum, if water bending is charged up to the maximum amount of water drops, they shoot
+ all at once
+
+v0.26 Beta
+----------------------------
+-Added Weapon Shackle Shot
+-Shackle Shot: shoots out three shackles with two hooks for each. Ignores platforms initially--seeks
+ enemy collision then platform collision and roots them once each are hooked. Hook duration depends on
+ distance the shackle traveled (about 75ms-400ms duration). Can be multiple shackles on one target. Enemies'
+ grappling hooks have no effect while rooted.
+-Fixed a bug where jumping allowed characters to move through downward accelerating platforms.
+-Changed jump so that it sets players to a certain speed instead of additive speed. Overall jumping is 
+ more consistent.
+-Fixed a bug with grappling hook shooting
+
